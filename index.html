@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SubWave Tester</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">SWT</div>
+    <h1>SubWave Tester</h1>
+  </header>
+  <main>
+    <div class="controls">
+
+        <label>Signalart:</label>
+        <div class="signal-types">
+          <button class="signal-btn" data-signal="sine">
+            <img src="images/sine.png" alt="Sinus" title="Sinus">
+          </button>
+          <button class="signal-btn" data-signal="square">
+            <img src="images/square.png" alt="Rechteck" title="Rechteck">
+          </button>
+          <button class="signal-btn" data-signal="triangle">
+            <img src="images/triangle.png" alt="Dreieck" title="Dreieck">
+          </button>
+          <button class="signal-btn" data-signal="sawtooth">
+            <img src="images/sawtooth.png" alt="Sägezahn" title="Sägezahn">
+          </button>
+        </div>
+      <label for="duration">Dauer (Sekunden):</label>
+      <input type="number" id="duration" value="5" min="0.5" step="0.1">
+    </div>
+      
+      <label for="volume">Lautstärke:</label>
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+    </div>
+    <div class="frequency-grid">
+      <button class="freq-btn" data-freq="65">65 Hz</button>
+      <button class="freq-btn" data-freq="85">85 Hz</button>
+      <button class="freq-btn" data-freq="45">45 Hz</button>
+      <button class="freq-btn" data-freq="35">35 Hz</button>
+      <button class="freq-btn" data-freq="50">50 Hz</button>
+      <button class="freq-btn" data-freq="100">100 Hz</button>
+      <button class="freq-btn" data-freq="75">75 Hz</button>
+      <button class="freq-btn" data-freq="90">90 Hz</button>
+      <button class="freq-btn" data-freq="70">70 Hz</button>
+      <button class="freq-btn" data-freq="55">55 Hz</button>
+      <button class="freq-btn" data-freq="60">60 Hz</button>
+      <button class="freq-btn" data-freq="40">40 Hz</button>
+      <button class="freq-btn" data-freq="80">80 Hz</button>
+      <button class="freq-btn" data-freq="15">15 Hz</button>
+      <button class="freq-btn" data-freq="25">25 Hz</button>
+      <button class="freq-btn" data-freq="20">20 Hz</button>
+      <button class="freq-btn" data-freq="95">95 Hz</button>
+      <button class="freq-btn" data-freq="30">30 Hz</button>
+    </div>
+    <canvas id="sine-visualizer"></canvas>
+  </div>
+    <div class="visualizer"></div>
+  </main>
+  <footer>
+    <p>&copy; 2025 SubWave Tester</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
